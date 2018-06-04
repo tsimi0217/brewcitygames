@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="profilestylesheet.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="w3-container">
+        <div class="w3-bar w3-light-grey w3-border w3-small">
+            <a href="index.html" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-sign-in"></i>
+            </a>
+            <a href="#" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-comments-o"></i>
+            </a>
+            <a href="#" class="w3-bar-item w3-button w3-right">
+                <i class="fa fa-search"></i>
+            </a>
+            <a href="index.html" class="w3-bar-item w3-button w3-blue w3-right">
+                <i class="fa fa-home"></i>
+            </a>
+        </div>
+        <div><h3>Brew City Games</h3></div>
+        <div>
+            <h1>Profile</h1>
+        </div>
+        <div>
+            <h2>YoungMee</h2>
+        </div>
+        <div>
+            <img src="yinyang.png">
+        </div>
+        <div>
+            <h3>Change Profile Picture</h3>
+        </div>
+        <div class="row">
+            <div class="column">
+                <img src="dragon1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="phoenix1.png" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width:50%">
+            </div>
+            <div class="column">
+                <img src="ank.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="redpanda.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="dragon1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="phoenix1.png" style="width:50%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="ank.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="redpanda.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;
+                </a>
+                <a class="next" onclick="plusSlides(1)">&#10095;
+                </a>
+                <div class="caption container">
+                    <p id="caption"></p>
+                </div>
+                <div class="column">
+                    <img class="demo" src="dragon1.jpg" onclick="currentSlide(1)" alt="Dragon">
+                </div>
+                <div class="column">
+                    <img class="demo" src="phoenix1.png" onclick="currentSlide(2)" alt="Phoenix" style="width:50%">
+                </div>
+                <div class="column">
+                    <img class="demo" src="ank.jpg" onclick="currentSlide(3)" alt="Ank">
+                </div>
+                <div class="column">
+                    <img class="demo" src="redpanda.jpg" onclick="currentSlide(4)" alt="RedPanda">
+                </div>
+            </div>
+        </div>
+        <div class="w3-container w3-light-blue">
+            <h3>Biography</h3>
+            <p>I have been playing video games since I was 3. The first gaming system I started playing on was an Atari. The
+                first game I remember playing was a bird game, linking logs together to create ladders. Growing up, we had
+                an Apple II GS, and I would play Oregon Trail. My favorite game was Mario Brothers for Nintendo. This was
+                the first ever Mario Brothers. I really enjoyed playing that game. Jak and Daxter is another game I really
+                enjoyed. Now, I really enjoy playing Texas Hold 'Em and The Room. I really wish there were more games similar
+                to The Room. I really would like games that are mind challenging and thought provoking.</p>
+        </div>
+        <script src="main.js"></script>
+        <script src="profile.js"></script>
+</body>
+
+</html>
